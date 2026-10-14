@@ -1,6 +1,6 @@
 # Square booking page cleanup plan
 
-Status: steps 1 and 2 **applied** on 2026-10-14 with the owner's approval and verified in Square. Everything else is still a proposal. Each step needs the owner's yes before it is applied (see `CLAUDE.md`).
+Status: steps 1, 2 and 3 **applied** on 2026-10-14 with the owner's approval and verified in Square. Everything else is still a proposal. Each step needs the owner's yes before it is applied (see `CLAUDE.md`).
 
 Based on a read-only review of the Square catalog on 2026-10-14.
 
@@ -23,10 +23,12 @@ These are set as bookable appointment services with no category:
 
 **Done:** online booking turned off for all four. Prices, names and descriptions unchanged; they can still be charged at checkout. Still open: whether one of the two deposit fees should be deleted.
 
-### 3. Services missing a category
+### 3. Services missing a category (DONE 2026-10-14)
 - Organic Coral Peel ($199), Vivant Chemical Peel ($300) → move to **Facials** (the site page is "Facials and Peels")
 - Lymphatic Massage w/ Photo Therapy & RF Skin Tightening, 5 Sessions ($500) → move to **Lymphatic Post-Surgery**, next to the single and 10-session versions
 - Electrolysis 30min 5 treatments ($260) → move to **Electrolysis**
+
+**Done:** all four moved into the populated copy of each category. Nothing else on them changed.
 
 ### 4. Duplicate and empty categories
 Two copies each of Facials, Massage, Electrolysis, Photo Therapy, Lymphatic Post-Surgery, Moisturizers, Toners, Intimate Skin Lightening and Package Deal. One copy of each holds the items; the others are empty. "Intimate Skin Lightening" and "Package Deal" are empty in both copies.
@@ -52,7 +54,7 @@ Owner to give the correct numbers. No guesses.
 
 ### 7. Categories to check with the owner
 - **Lash extensions** (Classic, Hybrid, Wispy): no variation is bookable online. Still offered? If not, archive.
-- **Body Contouring** (Cavitation & RF, 1 and 6 sessions): no variation is bookable online, but the site has a Body Contouring page. Turn booking on?
+- ~~Body Contouring not bookable~~ Correction: the first review misread this. The Pay in full and Deposit options for both Cavitation & RF services are bookable; only the Post Deposit option is off, same as most services. Nothing to do here.
 - Category names with stray trailing spaces ("Acne Treatment ", "Body Contouring Treatments ", "Lash extensions ").
 
 ## Suggested booking page order
