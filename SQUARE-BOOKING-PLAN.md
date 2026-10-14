@@ -1,6 +1,6 @@
 # Square booking page cleanup plan
 
-Status: steps 1, 2, 3 and 4 **applied** on 2026-10-14 with the owner's approval and verified in Square. Everything else is still a proposal. Each step needs the owner's yes before it is applied (see `CLAUDE.md`).
+Status: steps 1 to 5 **applied** on 2026-10-14 with the owner's approval and verified in Square. Everything else is still a proposal. Each step needs the owner's yes before it is applied (see `CLAUDE.md`).
 
 Based on a read-only review of the Square catalog on 2026-10-14.
 
@@ -39,12 +39,16 @@ Still open:
 - Toners has two copies and both hold "Daily Repair Pads". Left alone.
 - Intimate Skin Lightening and Package Deal (original 2020 copies, both empty): owner will decide later.
 
-### 5. Laser names are inconsistent
+### 5. Laser names are inconsistent (DONE 2026-10-14)
 Same service, five naming styles: "Laser Hair Removal 4 sessions Small area", "Laser Hair Removal 12 Sessions Small Area", "X-Small 4 Treatments Laser Hair Removal", "Laser Hair Removal 1 Touchup Small Area", "X-Small Touch Up Laser Hair Removal Treatment".
 
 **Proposal:** one pattern, sorted by size, using the website's size names:
 `Laser Hair Removal: Small Area, 4 Sessions` … `Laser Hair Removal: Small Area, Touch-Up`
 and keep "Unlimited 1 Year Laser Hair Removal Promo ($499)" at the top of the Laser category.
+
+**Done:** all 24 renamed and verified; prices, deposits, durations, descriptions and booking settings unchanged. The promo kept its name.
+
+**Order did not apply:** Square ignored the sort order sent through the API (all 25 positions unchanged). The owner sets it by dragging in Dashboard > Items > Categories > Laser Hair Removal (or Appointments > Services): promo, then Extra-Small, Small, Medium, Large, Extra-Large, Full Body, each as 4, 8, 12 Sessions, Touch-Up.
 
 ### 6. Deposit math that doesn't add up
 "Pay in full" minus "Deposit" should equal "Post Deposit":
@@ -75,5 +79,5 @@ Owner to give the correct numbers. No guesses.
 
 ## Notes
 
-- Category order on the booking page may need to be set in the Square Dashboard (Appointments settings) rather than through the API. Check before promising it.
+- Sort order is not settable through the API: Square kept its own positions when item order was sent in step 5. Category and service order have to be dragged into place in the Square Dashboard. This likely applies to the "Start Here" category from step 1 too.
 - Retail products (serums, cleansers, fajas) aren't on the booking page; they belong to the shop and are out of scope here.
