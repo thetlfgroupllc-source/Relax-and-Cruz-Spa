@@ -1,6 +1,6 @@
 # Square booking page cleanup plan
 
-Status: steps 1, 2 and 3 **applied** on 2026-10-14 with the owner's approval and verified in Square. Everything else is still a proposal. Each step needs the owner's yes before it is applied (see `CLAUDE.md`).
+Status: steps 1, 2, 3 and 4 **applied** on 2026-10-14 with the owner's approval and verified in Square. Everything else is still a proposal. Each step needs the owner's yes before it is applied (see `CLAUDE.md`).
 
 Based on a read-only review of the Square catalog on 2026-10-14.
 
@@ -30,10 +30,14 @@ These are set as bookable appointment services with no category:
 
 **Done:** all four moved into the populated copy of each category. Nothing else on them changed.
 
-### 4. Duplicate and empty categories
+### 4. Duplicate and empty categories (DONE 2026-10-14)
 Two copies each of Facials, Massage, Electrolysis, Photo Therapy, Lymphatic Post-Surgery, Moisturizers, Toners, Intimate Skin Lightening and Package Deal. One copy of each holds the items; the others are empty. "Intimate Skin Lightening" and "Package Deal" are empty in both copies.
 
-**Proposal:** delete the empty duplicates. Owner to confirm whether Intimate Skin Lightening and Package Deal are still offered.
+**Done:** deleted the 8 empty copies (Facials, Massage, Electrolysis, Photo Therapy, Lymphatic Post-Surgery, Moisturizers, and the 2024 copies of Intimate Skin Lightening and Package Deal). Verified gone; the populated copies are intact.
+
+Still open:
+- Toners has two copies and both hold "Daily Repair Pads". Left alone.
+- Intimate Skin Lightening and Package Deal (original 2020 copies, both empty): owner will decide later.
 
 ### 5. Laser names are inconsistent
 Same service, five naming styles: "Laser Hair Removal 4 sessions Small area", "Laser Hair Removal 12 Sessions Small Area", "X-Small 4 Treatments Laser Hair Removal", "Laser Hair Removal 1 Touchup Small Area", "X-Small Touch Up Laser Hair Removal Treatment".
