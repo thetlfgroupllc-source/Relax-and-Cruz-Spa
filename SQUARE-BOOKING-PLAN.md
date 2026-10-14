@@ -151,3 +151,19 @@ Owner's rule for deposits: $25 deposit, balance due = full price minus $25.
 Open: "kids massages" (owner asked to remove; none found in Square), Singing Bowls removal (previewed).
 - Singing Bowls **archived** (2026-10-14) and removed from the massage page on the website. The "Add-Ons" category is now empty.
 - Kids massages: none exist in Square or on the booking page; owner said to move on.
+
+## Step 11: laser split into size sections (DONE 2026-10-14)
+
+Created 7 categories and set each laser service's reporting category (what the booking page groups by) to its size. Each service also keeps the original "Laser Hair Removal" category for POS. Names, prices, deposits and durations unchanged. Verified on the live page.
+
+| Section | Category ID |
+| --- | --- |
+| Laser: $499 Unlimited Year (New Clients) | `XBYNHCID5DGG43PKKWN7XQD5` |
+| Laser: Extra-Small Areas (lip, chin, sideburns) | `SGEYQECKEVTGNVXOIZAV7K54` |
+| Laser: Small Areas (underarms, bikini, full face) | `M5IP5RJINCRLOR53B47FESSS` |
+| Laser: Medium Areas (Brazilian, arms, back, chest) | `PQSMVOOVA6ODUEJUJDSR6LKW` |
+| Laser: Large Areas (full arms, full back, legs) | `OL2RZMKLEBCW5TKIGRT4SBM6` |
+| Laser: Extra-Large Areas (full legs) | `BTOWBHOUVOJOBWAPEILOITVF` |
+| Laser: Full Body | `A4WDQJ3NP4AUIN47V3NXDXCC` |
+
+New sections appeared at the bottom of the page; the owner drags them under "Start Here" in Edit service display.
