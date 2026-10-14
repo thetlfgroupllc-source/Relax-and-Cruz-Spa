@@ -81,3 +81,20 @@ Owner to give the correct numbers. No guesses.
 
 - Sort order is not settable through the API: Square kept its own positions when item order was sent in step 5. Category and service order have to be dragged into place in the Square Dashboard. This likely applies to the "Start Here" category from step 1 too.
 - Retail products (serums, cleansers, fajas) aren't on the booking page; they belong to the shop and are out of scope here.
+
+## Step 7: booking page section labels (DONE 2026-10-14)
+
+Renamed the service categories (the section headings on the booking page) to match the website's page names. Verified in Square; only the names changed.
+
+| Before | After |
+| --- | --- |
+| Electrolysis | Electrolysis (Permanent Hair Removal) |
+| Facials | Facials and Peels |
+| Lymphatic Post-Surgery | Post-Op Lymphatic Massage |
+| Body Contouring Treatments (trailing space) | Body Contouring |
+| Massage | Swedish Massage |
+| Photo Therapy | LED Light Therapy |
+| Add on | Add-Ons |
+| Lash extensions (trailing space) | Lash Extensions |
+
+Unchanged: Start Here: Free Consultation, Laser Hair Removal, and all retail categories. Section order still has to be set by dragging in the Square Dashboard.
