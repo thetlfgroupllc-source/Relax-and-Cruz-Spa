@@ -167,3 +167,22 @@ Created 7 categories and set each laser service's reporting category (what the b
 | Laser: Full Body | `A4WDQJ3NP4AUIN47V3NXDXCC` |
 
 New sections appeared at the bottom of the page; the owner drags them under "Start Here" in Edit service display.
+
+## Final booking page order (verified live 2026-10-14)
+
+1. Start Here: Free Consultation
+2. Laser: $499 Unlimited Year (New Clients)
+3. Laser: Extra-Small Areas (lip, chin, sideburns)
+4. Laser: Small Areas (underarms, bikini, full face)
+5. Laser: Medium Areas (Brazilian, arms, back, chest)
+6. Laser: Large Areas (full arms, full back, legs)
+7. Laser: Extra-Large Areas (full legs)
+8. Laser: Full Body
+9. Electrolysis (Permanent Hair Removal)
+10. Facials and Peels
+11. Post-Op Lymphatic Massage
+12. Body Contouring
+13. Swedish Massage
+14. LED Light Therapy
+
+Still open: whether to delete one of the two "Booking Deposit Fee" items ($25 / $50); both are hidden from online booking.
