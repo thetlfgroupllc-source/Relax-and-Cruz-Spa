@@ -112,3 +112,9 @@ Checked the live page at phone size (`book.squareup.com/.../services`) after ste
 Proposed next fixes (need owner approval):
 - Free consults: change from variable pricing to a fixed $0 so they stop saying "Price varies".
 - Check in Dashboard whether the booking site has a "group services by category" or ordering option.
+
+## Step 8: free consults show "Free" (DONE 2026-10-14)
+
+Both consults changed from variable pricing to a fixed $0 and renamed "Free Consultation" and "Free Phone Consultation". Verified on the live booking page: both now read "Free · 15 min".
+
+Booking page order: confirmed it lists services oldest-created first (60min Swedish Massage, Aug 2020, is first; the $499 promo, newest, is last). No catalog field changes it, so moving the consults and promo to the top has to be done by the owner in the Square Dashboard (Appointments > Online booking > reorder services).
