@@ -98,3 +98,17 @@ Renamed the service categories (the section headings on the booking page) to mat
 | Lash extensions (trailing space) | Lash Extensions |
 
 Unchanged: Start Here: Free Consultation, Laser Hair Removal, and all retail categories. Section order still has to be set by dragging in the Square Dashboard.
+
+## Live booking page check (2026-10-14)
+
+Checked the live page at phone size (`book.squareup.com/.../services`) after steps 1 to 7.
+
+- Her booking page is **one flat list with no section headings**. Category names (steps 1 and 7) don't show there; they only affect Square reports, POS and the Square Online store.
+- Order is Square's own, not category order: 60min Swedish Massage is first, the free consults are about two-thirds down, and the $499 promo is last. Order has to be set by dragging in Dashboard > Appointments > Services (or the booking site settings).
+- Fees and the $0 membership are gone (step 2 worked).
+- Laser names show the new pattern (step 5 worked).
+- **Almost every service shows "Price varies"**, including both free consults. Square shows that whenever a service has more than one price option (Pay in full / Deposit / Post Deposit), or uses variable pricing (the consults). Services with one fixed price show it (Singing Bowls $7.00, Organic Coral Peel $199.00).
+
+Proposed next fixes (need owner approval):
+- Free consults: change from variable pricing to a fixed $0 so they stop saying "Price varies".
+- Check in Dashboard whether the booking site has a "group services by category" or ordering option.
