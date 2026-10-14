@@ -133,3 +133,19 @@ The booking site's "Edit service display" (Appointments > Online booking > Chann
 Verified on the live page: the booking page now shows section headings, in the order the owner dragged (Laser first, $499 promo at the top of Laser). "Start Here: Free Consultation" appears as its own section but at the bottom; the owner drags it to the top in Edit service display.
 
 Correction to the live-page check above: the flat list was because the display order hadn't been set yet; the booking page does show sections once it is.
+
+## Step 10: deposits, lashes, unused categories (DONE 2026-10-14)
+
+Owner's rule for deposits: $25 deposit, balance due = full price minus $25.
+
+| Service | Full | Deposit | Balance due (before → after) |
+| --- | --- | --- | --- |
+| High Frequency / Microdermabrasion | $120 | $25 | $85 → $95 |
+| Microdermabrasion Back Facial | $160 | $25 | $125 → $135 |
+| Unlimited 1 Year Laser Promo | $499 | $0 → $25 | $474 |
+
+- Lash extensions (Classic, Hybrid, Wispy) **archived**, not deleted; restorable from Items & services > Archived. Empty "Lash Extensions" category left in place.
+- Deleted empty categories "Intimate Skin Lightening" and "Package Deal" (no longer offered).
+- Body contouring: already bookable (single $120, 6-session $600); no change.
+
+Open: "kids massages" (owner asked to remove; none found in Square), Singing Bowls removal (previewed).

@@ -9,7 +9,7 @@
 - A general request like "organize the store" is not approval for individual changes.
 - After an approved change, read it back from Square and report only what the read confirms.
 
-The booking-page cleanup plan lives in `SQUARE-BOOKING-PLAN.md`. Steps 1 to 5 and 7 to 9 were applied on 2026-10-14; step 6 (deposit math) is not applied yet. Booking page order is set by the owner in Appointments > Online booking > Channels > Edit service display, which groups by reporting category.
+The booking-page cleanup plan lives in `SQUARE-BOOKING-PLAN.md`. Steps 1 to 10 were applied on 2026-10-14 (step 6 deposit math as part of step 10). Booking page order is set by the owner in Appointments > Online booking > Channels > Edit service display, which groups by reporting category.
 
 ## Square account
 
