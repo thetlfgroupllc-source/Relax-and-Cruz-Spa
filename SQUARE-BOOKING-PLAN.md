@@ -1,6 +1,6 @@
 # Square booking page cleanup plan
 
-Status: **proposal only. Nothing has been changed in Square.** Each step needs the owner's yes before it is applied (see `CLAUDE.md`).
+Status: steps 1 and 2 **applied** on 2026-10-14 with the owner's approval and verified in Square. Everything else is still a proposal. Each step needs the owner's yes before it is applied (see `CLAUDE.md`).
 
 Based on a read-only review of the Square catalog on 2026-10-14.
 
@@ -10,18 +10,18 @@ Based on a read-only review of the Square catalog on 2026-10-14.
 
 ## Problems found
 
-### 1. Free consult is not first
+### 1. Free consult is not first (DONE 2026-10-14)
 "Free consultation" and "Free phone Consultation" have no category, so they sit at the bottom of the booking page. The website sends everyone to "Book a free consult."
 
-**Proposal:** new top category "Start Here: Free Consultation", ordered first, holding both consult services.
+**Done:** created category "Start Here: Free Consultation" (`TPF6XZ6JCSF2ELZJHFZO67JX`), visible online, sort order set below every other category. Both consults are in it. Still to check: that it actually shows first on the live booking page; if not, drag it up in Dashboard > Appointments > Services.
 
-### 2. Fees and admin items show as bookable services
+### 2. Fees and admin items show as bookable services (DONE 2026-10-14)
 These are set as bookable appointment services with no category:
 - Booking Deposit Fee ($25) and Booking Deposit Fee ($50): two items with the same name
 - No Show Cancellation Fee ($25)
 - Monthly Membership ($0)
 
-**Proposal:** turn off online booking for all four (they stay usable at checkout). Owner to decide if one of the two deposit fees should be deleted.
+**Done:** online booking turned off for all four. Prices, names and descriptions unchanged; they can still be charged at checkout. Still open: whether one of the two deposit fees should be deleted.
 
 ### 3. Services missing a category
 - Organic Coral Peel ($199), Vivant Chemical Peel ($300) → move to **Facials** (the site page is "Facials and Peels")

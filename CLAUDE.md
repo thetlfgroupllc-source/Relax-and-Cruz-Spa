@@ -9,7 +9,7 @@
 - A general request like "organize the store" is not approval for individual changes.
 - After an approved change, read it back from Square and report only what the read confirms.
 
-The booking-page cleanup plan lives in `SQUARE-BOOKING-PLAN.md`. Nothing in it has been applied to Square yet.
+The booking-page cleanup plan lives in `SQUARE-BOOKING-PLAN.md`. Steps 1 and 2 were applied on 2026-10-14; the rest is not applied yet.
 
 ## Square account
 
