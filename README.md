@@ -23,7 +23,11 @@ sitemap.xml
 4. Deploy. You get a `*.pages.dev` preview address. Test everything there first.
 5. Every push to the main branch redeploys automatically.
 
-Do not use GitHub Pages. It can't do real 301 redirects, and the old URLs need them.
+## GitHub Pages preview
+
+The preview at `thetlfgroupllc-source.github.io/Relax-and-Cruz-Spa/` works because every path in the site is relative (`css/styles.css`, not `/css/styles.css`). Keep it that way on new pages.
+
+`.nojekyll` stops GitHub from hiding the underscore files. GitHub Pages still ignores `_redirects` and `_headers`, so it's fine for previews but not for launch: the old URLs need real 301 redirects. At launch, connect the same repo to Cloudflare Pages and point the domain there.
 
 ## Before launch
 
@@ -41,7 +45,7 @@ Do not use GitHub Pages. It can't do real 301 redirects, and the old URLs need t
 
 ## Pages still to build
 
-All use `css/styles.css`. Each page needs its own title and description.
+Each page goes in its own folder as `index.html` (for example `laser-hair-removal/index.html`), so the address works with or without a trailing slash. Inside a folder, link the shared files with `../css/styles.css`, `../js/main.js` and `../images/`. Each page needs its own title and description.
 
 | URL | Page |
 | --- | --- |
