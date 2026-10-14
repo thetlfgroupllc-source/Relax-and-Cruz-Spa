@@ -149,3 +149,5 @@ Owner's rule for deposits: $25 deposit, balance due = full price minus $25.
 - Body contouring: already bookable (single $120, 6-session $600); no change.
 
 Open: "kids massages" (owner asked to remove; none found in Square), Singing Bowls removal (previewed).
+- Singing Bowls **archived** (2026-10-14) and removed from the massage page on the website. The "Add-Ons" category is now empty.
+- Kids massages: none exist in Square or on the booking page; owner said to move on.
