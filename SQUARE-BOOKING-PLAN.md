@@ -118,3 +118,18 @@ Proposed next fixes (need owner approval):
 Both consults changed from variable pricing to a fixed $0 and renamed "Free Consultation" and "Free Phone Consultation". Verified on the live booking page: both now read "Free · 15 min".
 
 Booking page order: confirmed it lists services oldest-created first (60min Swedish Massage, Aug 2020, is first; the $499 promo, newest, is last). No catalog field changes it, so moving the consults and promo to the top has to be done by the owner in the Square Dashboard (Appointments > Online booking > reorder services).
+
+## Step 9: reporting categories (DONE 2026-10-14)
+
+The booking site's "Edit service display" (Appointments > Online booking > Channels) groups services by **reporting category**, not by the category list changed in steps 1 and 3. Six services had no reporting category and showed under "Other (Uncategorized services)". Set:
+
+| Service | Reporting category |
+| --- | --- |
+| Free Consultation, Free Phone Consultation | Start Here: Free Consultation |
+| Organic Coral Peel, Vivant Chemical Peel | Facials and Peels |
+| Lymphatic Massage … 5 Sessions | Post-Op Lymphatic Massage |
+| Electrolysis 30min 5 treatments | Electrolysis (Permanent Hair Removal) |
+
+Verified on the live page: the booking page now shows section headings, in the order the owner dragged (Laser first, $499 promo at the top of Laser). "Start Here: Free Consultation" appears as its own section but at the bottom; the owner drags it to the top in Edit service display.
+
+Correction to the live-page check above: the flat list was because the display order hadn't been set yet; the booking page does show sections once it is.
