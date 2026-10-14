@@ -359,3 +359,15 @@ p { margin: 0; }
 .compare a { color: inherit; }
 @media (min-width: 900px) { .cross-links { flex-wrap: nowrap; } }
 @media (max-width: 899px) { .cross-links > * { flex-basis: 100%; } }
+
+/* Service menu (facials, massage, shop) */
+.menu { margin-top: 40px; display: flex; flex-direction: column; }
+.menu-group + .menu-group { margin-top: 56px; }
+.menu-group > h3 { font-size: clamp(26px, 2.6vw, 34px); color: var(--plum); margin-bottom: 8px; }
+.menu-item { display: flex; flex-wrap: wrap; gap: 6px 40px; padding-block: 24px; border-top: 1px solid var(--rule); }
+.menu-item:last-child { border-bottom: 1px solid var(--rule); }
+.menu-item .name { flex: 1 1 260px; font-family: var(--display); font-size: 24px; line-height: 1.2; color: var(--plum-ink); }
+.menu-item .desc { flex: 2 1 380px; color: var(--text); font-size: 17px; }
+.menu-item .meta { flex: 0 0 auto; min-width: 140px; text-align: right; font-weight: 600; color: var(--plum); font-size: 17px; }
+@media (max-width: 720px) { .menu-item .meta { text-align: left; } }
+.map-frame { width: 100%; height: 420px; border: 0; display: block; }

@@ -4,9 +4,13 @@
 /permanent-hair-removal   /electrolysis        301
 /massages                 /massage             301
 /contact-us               /contact             301
+/facials                  /facials-and-peels   301
+/hair-removal             /laser-hair-removal  301
+/services                 /                    301
 
 # Old Wix product pages, still indexed by Google
 /product-page/*           /shop                301
 
 # Current Square Online product pages
 /product/*                /shop                301
+/s/shop                   /shop                301
