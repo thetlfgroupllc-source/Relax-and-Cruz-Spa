@@ -145,7 +145,7 @@ p { margin: 0; }
 .hero-media { flex: 1 1 340px; min-width: 0; }
 .rating { display: flex; gap: 10px; align-items: center; font-size: 16px; color: var(--text); }
 .hero-frame { position: relative; height: 560px; }
-.hero-frame .ph, .hero-frame img { position: absolute; inset: 0; }
+.hero-frame .ph, .hero-frame img, .hero-frame video { position: absolute; inset: 0; }
 .hero-frame .ph { align-items: flex-start; padding-top: 18%; }
 .offer-card {
   position: absolute; left: 20px; right: 20px; bottom: 20px; max-width: 340px;
@@ -240,10 +240,12 @@ p { margin: 0; }
 
 /* Reviews */
 .quote { font-family: var(--display); font-style: italic; font-weight: 400; font-size: clamp(34px, 4.2vw, 58px); line-height: 1.12; color: var(--plum); margin: 0; }
-.ba { display: flex; gap: 10px; }
-.ba .ph { flex: 1 1 0; height: 200px; padding: 12px; font-size: 15px; }
-.ba .ph:first-child { border-radius: 0 64px 0 0; }
-.ba .ph:last-child { border-radius: 0 0 0 64px; }
+
+/* Before and after photos */
+.results { margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 32px; }
+.result { margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.result img { display: block; width: 100%; height: auto; border-radius: 0 48px 0 48px; }
+.result figcaption { font-size: 16px; color: var(--text); }
 
 /* About Crystal */
 .about-name { font-size: clamp(56px, 7.6vw, 116px); line-height: 0.92; letter-spacing: -0.02em; color: var(--plum); }
