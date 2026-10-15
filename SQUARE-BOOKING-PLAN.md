@@ -186,3 +186,9 @@ New sections appeared at the bottom of the page; the owner drags them under "Sta
 14. LED Light Therapy
 
 Still open: whether to delete one of the two "Booking Deposit Fee" items ($25 / $50); both are hidden from online booking.
+
+## Step 12: business hours match the website (DONE 2026-10-15)
+
+Square location hours changed from Mon–Fri 10–5:45 and Sat 10–6 to **Tue–Sat 10am–6pm, closed Sun and Mon**, matching the website (and her actual schedule: no Monday appointments Jul–Sep 2026). Verified by reading the location back.
+
+Not changeable from here: Crystal's staff availability in Square Appointments (controls bookable slots), Google Business Profile, Yelp, Facebook. Owner updates those by hand.
