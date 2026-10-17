@@ -90,10 +90,13 @@
       <p class="rating"><svg width="18" height="18" viewBox="0 0 24 24" fill="#872D68" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg>Rated 4.8 out of 5 across 162 Google reviews</p>
     </div>
     <div class="hero-media">
-      <div class="hero-frame">
-        <!-- TODO before launch: replace this placeholder with <img class="photo leaf-lg" src="hero.jpg" alt="Crystal treating a client"> -->
-        <div class="ph leaf-lg">Photo: Crystal with a client in the treatment room</div>
-        <div class="offer-card" style="border-radius: 0 48px 0 48px">
+      <div class="hero-frame hero-frame--video hero-frame--intro">
+        <video class="photo leaf-lg" id="intro-video" src="images/intro.mp4" poster="images/intro.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Crystal Cruz introduces herself and the spa"></video>
+        <button class="sound-btn" type="button" id="intro-sound" aria-pressed="false">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+          <span>Tap for sound</span>
+        </button>
+        <div class="offer-card offer-card--compact" style="border-radius: 0 48px 0 48px">
           <p class="price">$499</p>
           <p class="what">Unlimited laser hair removal for a full year</p>
           <p class="terms">First-time clients only. Choose from eligible areas like underarms, bikini line or Brazilian.</p>
