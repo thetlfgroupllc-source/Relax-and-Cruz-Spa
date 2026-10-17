@@ -19,6 +19,33 @@
     });
   }
 
+  // Homepage intro video: plays muted on load; the button restarts it with sound.
+  var intro = document.getElementById('intro-video');
+  var sound = document.getElementById('intro-sound');
+  if (intro && sound) {
+    sound.addEventListener('click', function () {
+      if (intro.muted) {
+        intro.muted = false;
+        intro.loop = false;
+        intro.currentTime = 0;
+        intro.play();
+        sound.setAttribute('aria-pressed', 'true');
+        sound.querySelector('span').textContent = 'Mute';
+      } else {
+        intro.muted = true;
+        sound.setAttribute('aria-pressed', 'false');
+        sound.querySelector('span').textContent = 'Tap for sound';
+      }
+    });
+    intro.addEventListener('ended', function () {
+      intro.muted = true;
+      intro.loop = true;
+      intro.play();
+      sound.setAttribute('aria-pressed', 'false');
+      sound.querySelector('span').textContent = 'Tap for sound';
+    });
+  }
+
   // Price finder. Prices come from her price sheet; update them here.
   var list = document.getElementById('area-list');
   var panel = document.getElementById('finder-panel');
