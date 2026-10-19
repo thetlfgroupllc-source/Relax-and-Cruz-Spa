@@ -413,3 +413,11 @@ p { margin: 0; }
   text-decoration: none; min-height: 44px;
 }
 .cherry-note:hover { background: rgba(255,255,255,0.22); color: var(--white); }
+
+/* ===== LED light therapy clip beside its menu group ===== */
+.menu-group--media { display: grid; gap: 24px; }
+.menu-video { display: block; height: auto; max-width: 420px; aspect-ratio: 1 / 1; }
+@media (min-width: 1100px) {
+  .menu-group--media { grid-template-columns: minmax(0, 1fr) 260px; gap: 48px; align-items: start; }
+  .menu-video { aspect-ratio: 4 / 5; }
+}
