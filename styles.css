@@ -421,3 +421,6 @@ p { margin: 0; }
   .menu-group--media { grid-template-columns: minmax(0, 1fr) 260px; gap: 48px; align-items: start; }
   .menu-video { aspect-ratio: 4 / 5; }
 }
+
+/* ===== Treatment videos in the results row ===== */
+.result video { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 0 48px 0 48px; }
