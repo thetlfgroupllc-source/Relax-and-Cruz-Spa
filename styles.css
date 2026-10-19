@@ -391,7 +391,7 @@ p { margin: 0; }
 }
 
 /* ===== Intro video in Crystal's portrait spot ===== */
-.about-video { position: relative; }
+.about-video { position: relative; display: block; }
 @media (min-width: 721px) { .about-video { height: 660px; max-width: 440px; margin-inline: auto; } }
 .about-video video { display: block; object-position: 50% 20%; }
 .sound-btn {
