@@ -35,7 +35,7 @@ The preview at `thetlfgroupllc-source.github.io/Relax-and-Cruz-Spa/` works becau
 - [ ] Portrait of Crystal: replace the placeholder with `/images/crystal.jpg`
 - [ ] Before and after photos: underarm and chin, plus the session counts
 - [ ] Crystal's bio in her own words
-- [ ] Credentials: license number, laser certification, supervising physician. Fill in or delete each line. Never launch with brackets.
+- [x] Credentials: license numbers filled in; laser certification and supervising physician left off the site at Crystal's request (Oct 20, 2026).
 - [ ] "Read the reviews" link: swap in her Google Business Profile reviews link
 - [ ] Cherry: link it to her Cherry application page
 - [ ] Square: free consult listed first, and prices that match `js/main.js`

@@ -77,18 +77,19 @@
   if (!list || !panel) return;
 
   var TIERS = {
-    xs: { name: 'Extra-small area', covers: 'the upper lip, chin, sideburns, forehead, fingers or toes', p4: '$120', p8: '$230', p12: '$350', per: '$29' },
-    s:  { name: 'Small area', covers: 'the full face, basic bikini, underarms, areola or happy trail', p4: '$215', p8: '$420', p12: '$635', per: '$53' },
-    m:  { name: 'Medium area', covers: 'the upper arms, forearms, upper or lower back, chest, abdomen, full face with front and back of neck, or Brazilian', p4: '$280', p8: '$530', p12: '$810', per: '$68' },
-    l:  { name: 'Large area', covers: 'full arms, full chest and abdomen, full back, full butt, upper legs and knees, or lower legs and knees', p4: '$310', p8: '$590', p12: '$900', per: '$75' },
-    xl: { name: 'Extra-large area', covers: 'full legs: upper legs, knees, lower legs front and back, feet and toes', p4: '$560', p8: '$1,075', p12: '$1,600', per: '$133' },
-    fb: { name: 'Full body', covers: 'every area, head to toe', p4: '$1,700', p8: '$3,000', p12: '$4,700', per: '$392' }
+    xs: { name: 'Extra-small area', covers: 'the upper lip, chin, sideburns, forehead, fingers or toes', p4: '$120', p8: '$230', p12: '$350', per: '$29', single: '$40' },
+    s:  { name: 'Small area', covers: 'the full face, basic bikini, underarms or areola', p4: '$215', p8: '$420', p12: '$635', per: '$53', single: '$65' },
+    m:  { name: 'Medium area', covers: 'the upper arms, forearms, upper or lower back, chest, abdomen, full face with front and back of neck, or Brazilian', p4: '$280', p8: '$530', p12: '$810', per: '$68', single: '$85' },
+    l:  { name: 'Large area', covers: 'full arms, full chest and abdomen, full back, full butt, upper legs and knees, or lower legs and knees', p4: '$310', p8: '$590', p12: '$900', per: '$75', single: '$100' },
+    xl: { name: 'Extra-large area', covers: 'full legs: upper legs, knees, lower legs front and back, feet and toes', p4: '$560', p8: '$1,075', p12: '$1,600', per: '$133', single: '$160' },
+    fb: { name: 'Full body', covers: 'every area, head to toe', p4: '$1,700', p8: '$3,000', p12: '$4,700', per: '$392', single: '$550' }
   };
 
   var PICK_ONE = 'you can add one of: upper lip, chin, sideburns, areolas, or hands and fingers.';
 
   var AREAS = [
-    { name: 'Upper lip and chin', tier: 'xs', note: 'Gray or light hairs here respond better to electrolysis. Your consult will tell you which.', offer: 'First visit? Both are included in the $499 unlimited year.' },
+    { name: 'Upper lip', tier: 'xs', note: 'Gray or light hairs here respond better to electrolysis. Your consult will tell you which.', offer: 'First visit? The upper lip is included in the $499 unlimited year.' },
+    { name: 'Chin', tier: 'xs', note: 'Gray or light hairs here respond better to electrolysis. Your consult will tell you which.', offer: 'First visit? The chin is included in the $499 unlimited year.' },
     { name: 'Full face', tier: 's', note: 'Covers the cheeks, sideburns, upper lip and chin.', offer: 'The $499 year covers the upper lip, chin and sideburns, but not the full face.' },
     { name: 'Face and neck', tier: 'm', note: 'Full face plus the front and back of the neck. Keeps a beard line sharp and cuts down razor bumps.', offer: 'The $499 year can cover the front or back of the neck plus one face area, like the chin.' },
     { name: 'Underarms', tier: 's', note: 'One of the quickest areas to treat, and a common first area for new clients.', offer: 'First visit? Underarms qualify for the $499 year, and ' + PICK_ONE },
@@ -109,6 +110,7 @@
     fields.name.textContent = a.name;
     fields.tier.textContent = t.name;
     fields.covers.textContent = t.covers;
+    fields.single.textContent = t.single;
     fields.p4.textContent = t.p4;
     fields.p8.textContent = t.p8;
     fields.p12.textContent = t.p12;
@@ -129,5 +131,5 @@
     if (btn) show(Number(btn.getAttribute('data-area')));
   });
 
-  show(3);
+  show(4);
 })();
