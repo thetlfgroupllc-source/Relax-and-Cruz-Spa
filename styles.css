@@ -425,5 +425,6 @@ p { margin: 0; }
 /* ===== Treatment videos in the results row ===== */
 .result video { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 0 48px 0 48px; }
 @media (min-width: 900px) { .results--pairs { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-/* ===== Short treatment clip under a section's text ===== */
-.result--clip { max-width: 280px; margin-top: 8px; }
+/* ===== Four treatment videos in one row ===== */
+@media (min-width: 600px) { .results--four { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1100px) { .results--four { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; } }
