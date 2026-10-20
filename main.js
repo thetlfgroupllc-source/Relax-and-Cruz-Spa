@@ -46,6 +46,31 @@
     });
   }
 
+  // Intro video slider: drag to jump to any point in the video.
+  var seek = document.getElementById('intro-seek');
+  var time = document.getElementById('intro-time');
+  if (intro && seek) {
+    var dragging = false;
+    var fmt = function (s) {
+      s = Math.max(0, Math.floor(s || 0));
+      return Math.floor(s / 60) + ':' + ('0' + (s % 60)).slice(-2);
+    };
+    var showTime = function () {
+      if (time && intro.duration) time.textContent = fmt(intro.currentTime) + ' / ' + fmt(intro.duration);
+    };
+    intro.addEventListener('timeupdate', function () {
+      if (!dragging && intro.duration) seek.value = Math.round(intro.currentTime / intro.duration * 1000);
+      showTime();
+    });
+    intro.addEventListener('loadedmetadata', showTime);
+    seek.addEventListener('input', function () {
+      dragging = true;
+      if (intro.duration) intro.currentTime = seek.value / 1000 * intro.duration;
+      showTime();
+    });
+    seek.addEventListener('change', function () { dragging = false; });
+  }
+
   // Price finder. Prices come from her price sheet; update them here.
   var list = document.getElementById('area-list');
   var panel = document.getElementById('finder-panel');

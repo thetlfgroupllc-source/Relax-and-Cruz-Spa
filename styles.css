@@ -403,6 +403,10 @@ p { margin: 0; }
 }
 .sound-btn:hover { background: var(--plum); }
 .sound-btn:focus-visible { outline: 3px solid var(--leaf); outline-offset: 2px; }
+.intro-seek { display: flex; align-items: center; gap: 14px; margin-top: 16px; }
+@media (min-width: 721px) { .intro-seek { max-width: 440px; margin-inline: auto; } }
+.intro-seek input { flex: 1; min-width: 0; height: 32px; margin: 0; accent-color: var(--plum); cursor: pointer; }
+.intro-time { font: 600 14px/1 var(--body); color: var(--text); font-variant-numeric: tabular-nums; white-space: nowrap; }
 
 /* ===== Cherry financing button (on plum booking section) ===== */
 .cherry-note {
