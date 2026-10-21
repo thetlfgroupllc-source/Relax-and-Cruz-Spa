@@ -71,6 +71,46 @@
     seek.addEventListener('change', function () { dragging = false; });
   }
 
+  // Laser deal popup: shows once per visit, on whichever page the visitor lands on.
+  var BOOK = 'https://book.squareup.com/appointments/5c3y8w34fg9goo/location/LR7VH9PK37BJG/services';
+  var base = (document.currentScript && document.currentScript.src || '').replace(/main\.js.*$/, '');
+  var seen = false;
+  try { seen = sessionStorage.getItem('laserDealSeen') === '1'; } catch (e) {}
+  if (!seen) {
+    var promo = document.createElement('div');
+    promo.className = 'promo';
+    promo.innerHTML =
+      '<div class="promo-card" role="dialog" aria-modal="true" aria-labelledby="promo-title">' +
+        '<button class="promo-close" type="button" aria-label="Close">&times;</button>' +
+        '<p class="promo-tag">Limited-time offer</p>' +
+        '<p class="promo-pct">20% off</p>' +
+        '<h2 class="promo-title" id="promo-title">Laser hair removal packages</h2>' +
+        '<p class="promo-text">Save 20% on any 4, 8 or 12 session laser package. Book your free consult and mention this offer to claim it.</p>' +
+        '<a class="btn btn-leaf promo-cta" href="' + BOOK + '">Claim my 20% off</a>' +
+        '<a class="promo-link" href="' + base + 'laser-hair-removal/#prices">See package prices</a>' +
+        '<button class="promo-skip" type="button">No thanks</button>' +
+        '<p class="promo-fine">Offer subject to change.</p>' +
+      '</div>';
+    document.body.appendChild(promo);
+    var lastFocus = document.activeElement;
+    var closePromo = function () {
+      promo.classList.remove('is-open');
+      document.removeEventListener('keydown', onKey);
+      setTimeout(function () { promo.remove(); }, 250);
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    };
+    var onKey = function (e) { if (e.key === 'Escape') closePromo(); };
+    promo.addEventListener('click', function (e) {
+      if (e.target === promo || e.target.closest('.promo-close, .promo-skip')) closePromo();
+    });
+    document.addEventListener('keydown', onKey);
+    try { sessionStorage.setItem('laserDealSeen', '1'); } catch (e) {}
+    requestAnimationFrame(function () {
+      promo.classList.add('is-open');
+      promo.querySelector('.promo-close').focus();
+    });
+  }
+
   // Price finder. Prices come from her price sheet; update them here.
   var list = document.getElementById('area-list');
   var panel = document.getElementById('finder-panel');
